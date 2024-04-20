@@ -1,0 +1,47 @@
+.reportview-container {
+    flex-direction: row;
+}
+
+.main {
+    max-width: 100%;
+}
+
+.st-emotion-cache-10trblm.e1nzilvr1 {
+    text-transform: uppercase;
+    color: #01192b;
+    /*text-align: center;*/
+}
+
+#stock-trend-prediction .st-emotion-cache-10trblm.e1nzilvr1 {
+    text-align: center;
+}
+
+.block-container {
+    max-width: none !important;
+}
+
+.st-emotion-cache-1v0mbdj {
+    align-items: center !important;
+}
+
+img {
+    width: 100% !important
+}
+
+.st-emotion-cache-gh2jqd {
+    padding-top: 0.5rem;
+}
+
+#02eeb487-6259-49ac-ae56-38eb100ccb1b {
+    font-style:Italic;
+    font-size: 17px;
+}
+
+.st-emotion-cache-183lzff {
+    white-space: pre;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+    overflow-x: auto;
+}
+
