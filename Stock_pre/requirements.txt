@@ -1,0 +1,10 @@
+tensorflow
+keras
+pandas
+notebook
+pandas_datareader
+streamlit
+yfinance
+scikit-learn
+Flask
+matplotlib

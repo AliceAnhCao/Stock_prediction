@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from pandas_datareader import data as pdr
 from datetime import datetime
 import yfinance as yf
-
+import json
 yf.pdr_override()
 from keras.models import load_model
 import streamlit as st
@@ -50,10 +50,12 @@ class SessionState:
 
 
 # Get all list NASDAQ
-headers = {
-    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"}
-res = requests.get("https://api.nasdaq.com/api/quote/list-type/nasdaq100", headers=headers)
-df_profile = pd.DataFrame(res.json()['data']['data']['rows'])
+with open('list_company.json','r') as file:
+    list_company = json.load(file)
+# headers = {
+#     "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"}
+# res = requests.get("https://api.nasdaq.com/api/quote/list-type/nasdaq100", headers=headers)
+df_profile = pd.DataFrame(list_company)
 list_symbols = df_profile['symbol'].to_list()
 
 # Tạo một select box
