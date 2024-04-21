@@ -5,8 +5,13 @@
 2. Nguyễn Quốc Trung
 3. Ngô Khánh Linh
 
-## To run the code: streamlit run app_FE.py
 
+## Install Library 
+pip install -r requirements.txt
+
+## To run the code: 
+- cd to folder của project
+- streamlit run app_FE.py
 
 ## Dự án bao gồm các file sau:
 - Stock_model.ipynb: File code phân tích và xây dựng mô hình bằng thuật toán LSTM
