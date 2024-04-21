@@ -10,7 +10,7 @@
 pip install -r requirements.txt
 
 ## To run the code: 
-- cd to folder của project
+- cd vào folder của project
 - streamlit run app_FE.py
 
 ## Dự án bao gồm các file sau:
